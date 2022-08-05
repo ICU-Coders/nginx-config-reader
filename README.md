@@ -33,7 +33,7 @@ go run ./main.go
 ```
 -i input 指定解析文件地址 
 -l log 输出nginx配置log的位置
--s sort 排序("host", "server", "server_name")/(listen", "port")/uri/dir 默认listen
+-s sort 排序server/listen/uri/dir 默认listen
 -m match 匹配字符筛选
 -h help 输出帮助内容
 ```
