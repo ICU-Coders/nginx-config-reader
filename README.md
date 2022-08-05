@@ -14,6 +14,7 @@ nginx 配置文件读取工具，用于快速预览当前服务下所有nginx配
 效果图
 ![example](./example.jpg)
 
+### 如何使用
 
 ```shell
 go run ./main.go

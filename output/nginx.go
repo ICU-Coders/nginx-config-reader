@@ -2,6 +2,7 @@ package output
 
 import (
 	"fmt"
+	"github.com/ICU-Coders/table"
 	"nginx-config-reader/config"
 	"nginx-config-reader/parser"
 	"sort"
@@ -97,7 +98,7 @@ func Nginx(nginx *parser.ObjectExpression) {
 			}
 
 		}
-		Table([]string{"Module", "Type", "Path"}, content)
+		table.Show([]string{"Module", "Type", "Path"}, content)
 
 		fmt.Println()
 		fmt.Println()
@@ -148,7 +149,8 @@ func Nginx(nginx *parser.ObjectExpression) {
 	}
 
 	fmt.Println("Index Table:")
-	Table([]string{"ServerName", "Listen", "URI", "Method", "Dir"}, content)
+
+	table.Show([]string{"ServerName", "Listen", "URI", "Method", "Dir"}, content)
 
 }
 
