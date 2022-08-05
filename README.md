@@ -15,16 +15,20 @@ nginx 配置文件读取工具，用于快速预览当前服务下所有nginx配
 ![example](./example.jpg)
 
 ### 如何使用
+有以下两种方案可供选择：
 
+1. 下载已经编译好的可执行文件 [Release](https://github.com/ICU-Coders/nginx-config-reader/releases)
+
+```shell
+chmod o+x ./ncr-linux
+./ncr-linux
+```
+
+2. 本地编译运行
 ```shell
 go run ./main.go
 ```
-或者
-```shell
-cd build 
-chmod o+x ./ncr_linunx
-./ncr_linunx
-```
+
 ### 可选参数
 ```
 -i input 指定解析文件地址 

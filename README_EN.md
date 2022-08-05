@@ -13,15 +13,18 @@ Results Show
 ![example](./example.jpg)
 
 ### How To Use
+The following two options are available：
+
+1. Download the compiled executable file [Release](https://github.com/ICU-Coders/nginx-config-reader/releases)
 
 ```shell
-go run ./main.go
+chmod o+x ./ncr-linux
+./ncr-linux
 ```
-OR
+
+2. Local operation
 ```shell
-cd build 
-chmod o+x ./ncr_linunx
-./ncr_linunx
+go run ./main.go
 ```
 ### Optional parameters
 ```
