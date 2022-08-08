@@ -11,6 +11,19 @@ import (
 
 func main() {
 
+	color.New(color.FgGreen).Println(`
+*********************Welcome to use***********************
+*                                                        *
+*    _|           _|    _|_|_|_|_|_|    _|_|_|_|_|_|     *
+*    _| _|        _|    _|              _|         |     *
+*    _|   _|      _|    _|              _|_|_|_|_|_|     *
+*    _|     _|    _|    _|              _| _|            *
+*    _|        _| _|    _|              _|    _|         *
+*    _|           _|    _|_|_|_|_|_|    _|       __|     *
+*                                                        *
+********************nginx config reader*******************
+`)
+
 	if len(config.RootPath) == 0 {
 		var err error
 		config.RootPath, err = cmd.CheckNginx()
@@ -18,7 +31,6 @@ func main() {
 			output.ErrorFatal(1004, err)
 		}
 	}
-
 	// 从根配置开始解析，如果用户输入文件，解析用户文件，否则按照nginx -t解析输出文件
 	content, err := parser.ConfigParser(config.RootPath)
 	if err != nil {
@@ -27,4 +39,5 @@ func main() {
 
 	color.New(color.FgCyan).Println("> Generate results...")
 	output.Nginx(content)
+
 }

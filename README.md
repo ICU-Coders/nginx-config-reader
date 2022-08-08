@@ -3,6 +3,15 @@
    <img src="https://raw.githubusercontent.com/ICU-Coders/IconLib/master/icon.jpg" alt="ICU-Coders" title="ICU-Coders">
  </p>
 
+```
+_|           _|    _|_|_|_|_|_|    _|_|_|_|_|_|
+_| _|        _|    _|              _|         |
+_|   _|      _|    _|              _|_|_|_|_|_|
+_|     _|    _|    _|              _| _| 
+_|        _| _|    _|              _|    _|
+_|           _|    _|_|_|_|_|_|    _|       __|
+```
+
 # nginx-config-reader(ncr)
 
 nginx 配置文件读取工具，用于快速预览当前服务下所有nginx配置文件
